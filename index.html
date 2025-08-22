@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izaura Moreira | Portfolio</title>
+  <meta name="description" content="Portfólio da desenvolvedora front-end Izaura Moreira: compartilhamento de projetos e habilidades desenvolvidas.">
+  <link rel="shortcut icon" href="assets/imagens/favicon.png" type="imagem/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="custom-cursor"></div>   
+  <header class="header">      
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+         <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Circulos Flutuantes-->
+<svg class="bg-shapes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+  <!-- Círculo 1 -->
+  <circle cx="200" cy="200" r="150" fill="#C7C8C9" opacity="0.05">
+    <animate attributeName="cx" values="200;800;200" dur="30s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Círculo 2 -->
+  <circle cx="800" cy="800" r="100" fill="#9A9A9C" opacity="0.05">
+    <animate attributeName="cy" values="800;200;800" dur="40s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Círculo 3 -->
+  <circle cx="500" cy="500" r="120" fill="#9A9A9C" opacity="0.06">
+    <animate attributeName="r" values="120;180;120" dur="25s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Círculo 4 -->
+  <circle cx="300" cy="700" r="80" fill="#56575A" opacity="0.04">
+    <animate attributeName="cx" values="300;600;300" dur="35s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Círculo 5 -->
+  <circle cx="900" cy="100" r="60" fill="#9A9A9C" opacity="0.03">
+    <animate attributeName="cy" values="100;900;100" dur="50s" repeatCount="indefinite" />
+  </circle>
+  <!-- Círculo 6 -->
+<circle cx="50" cy="100" r="100" fill="#9A9A9C" opacity="0.06">
+  <animate attributeName="cy" values="100;900;100" dur="45s" repeatCount="indefinite" />
+</circle>
+</svg>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Transformando ideias em experiências</b></h1>
+
+      <p>Izaura Moreira, Porto Alegre-RS, Desenvolvedora Front-end.</p> 
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/izauratm" target="_blank" aria-label="Abre pagina do github">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/izaura-moreira-221a1828/" target="_blank" aria-label="Abre pagina do LinkedIn">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.instagram.com/" target="_blank" aria-label="Abre página do instagram">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="fa-solid fa-folder-open"></i>
+        </button>  
+      </a>
+    </div>
+    <div class="main__content2">
+     
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Conhecimento nas principais tecnologias do mercado</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/imagens/arquivo-html.png" alt="Logo HTML">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/imagens/css.png" alt="Logo CSS">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/imagens/javascript.png" alt="Logo javascript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/imagens/json.png" alt="Logo JSON">
+      </li>
+       <li class="technologies__item">
+        <img class="technologies__logo" src="assets/imagens/mysql.png" alt="Logo Mysql">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/imagens/IA.png" alt="Logo Inteligencia Artificial">
+      </li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/imagens/ProjetoPageDiscord.png" alt="Clone da página Discord">
+        <div class="card__body">
+          <h3 class="card__title">Landing Page do Discord</h3>
+          <p class="card__description">Projeto desenvolvido como desafio do Bootcamp da Dio.me 2025, inspirado na landing page do Discord.</p>
+          <ul class="card__list">
+            <li class="card__item">Criação de uma página responsiva para desktop e mobile;</li>
+            <li class="card__item">Utilização do conceitos Flexbox e Grid;</li>
+            <li class="card__item">Navbar com links e seções com imagens e acessibilidade;</li>
+            <li class="card__item">Algumas funcionalidades podem não funcionar na página visto o objetivo da atividade.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/css.png " alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/arquivo-html.png" alt="Logo do HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/vsc.png" alt="Logo Visual Studio Code">
+            </li>
+          </ul>
+          <a href="https://izauratm.github.io/Desafio-Layout-Discord/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Ir Para...</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/imagens/ProjetoPageYoutube.png" alt="Clone de uma pagina do Youtube">
+        <div class="card__body">
+          <h3 class="card__title">Clonagem de uma página do YouTube</h3>
+          <p class="card__description">Projeto desenvolvido como desafio do Bootcamp da Dio.me 2025: clonar uma página do YouTube colocando em prática todos os conceitos aprendidos, principalmente sobre Flexbox. Meu projeto foi baseado em uma série da TV que assisto: The Handmaid's Tale.</p>
+          <ul class="card__list">
+            <li class="card__item">Estilizações básicas, unidades de medidas;</li>
+            <li class="card__item">Responsividade e acessibilidade;</li>
+            <li class="card__item">Posicionamento e exibição de elementos usando Flexbox.</li> 
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/css.png " alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/arquivo-html.png" alt="Logo do HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/vsc.png" alt="Logo Visual Studio Code">
+            </li>
+          </ul>
+          <a href="https://izauratm.github.io/Projeto-Layout-Wikipedia/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Ir Para...</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img class="card__cover" src="assets/imagens/ProjetoAmigoSecreto.png" alt="Imagem página sorteio amigo secreto">
+        <div class="card__body">
+          <h3 class="card__title">Curso Lógica da programação: Challenge amigo secreto - Alura | ONE</h3>
+          <p class="card__description">O objetivo principal do desafio foi desenvolver as habilidades em lógica de programação. Os códigos HTML e CSS já estavam preparados. Logo, deveríamos desenvolver o código JavaScript.</p>
+          <ul class="card__list">
+            <li class="card__item">Construção da lógica do código JavaScript;</li>
+            <li class="card__item">Aplicação dos conceitos-chave como funções, arrays, condicionais e variáveis;</li>
+            <li class="card__item">Foco na resolução do problema para melhorar o raciocínio lógico, sem se preocupar com a estrutura visual do projeto.</li>
+          </ul>
+         <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/css.png " alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/arquivo-html.png" alt="Logo do HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/javascript.png" alt="Logo do Javascript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/vsc.png" alt="Logo Visual Studio Code">
+            </li>
+          </ul>
+          <a href="https://izauratm.github.io/Projeto-Amigo-Secreto/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Ir Para...</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/imagens/Projetopokedex.png" alt="Clone de uma pagina do Youtube">
+        <div class="card__body">
+          <h3 class="card__title">Construindo uma Pokédex com JavaScript</h3>
+          <p class="card__description">Projeto desenvolvido como desafio do Bootcamp da Dio.me 2025: explorar o mundo Pokémon através do consumo de uma API REST para a criação de uma Pokédex divertida.</p>
+          <ul class="card__list">
+            <li class="card__item">Desenvolvimento Web com JavaScript;</li>
+            <li class="card__item">Construção do projeto com HTML e CSS para criar a listagem dos Pokémons;</li>
+            <li class="card__item">Protocolo HTTP com integração PokeAPI.</li>            
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/css.png " alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/arquivo-html.png" alt="Logo do HTML">
+            </li>
+             <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/javascript.png" alt="Logo do Javascript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/imagens/vsc.png" alt="Logo Visual Studio Code">
+            </li>
+          </ul>
+          <a href="https://izauratm.github.io/Projeto-Pokemon-Pokedex/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Ir Para...</span>
+            </button>
+          </a>          
+        </div>
+      </div>
+       
+      <a href="https://github.com/izauratm" target="_blank">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>          
+        </button>  
+      </a>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/imagens/" alt="">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Curioso(a) sobre meu trabalho ou quer bater um papo sobre tecnologia e design? Estou por aqui! Me chama por
+          e-mail ou pelas redes sociais — adoro conhecer gente nova e compartilhar experiências até porque meu
+          conhecimento está apenas começando!
+        </p>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3><img src="assets/imagens/programacao.png" alt=""> Programação</h3>
+            <ul>
+              <li>JavaScript ●●●○○</li>
+              <li>React ●○○○○</li>
+              <li>NodeJS & Express ●●○○○</li>
+              <li>HTML/CSS ●●●●○</li>
+              <li>Java ○○○○○</li>
+              <li>Python ○○○○○</li>
+              <li>C / C++ ○○○○○</li>
+              <li>SQL ●●●○○</li>
+            </ul>
+          </div>
+  
+          <div class="skill-group">
+            <h3><img src="assets/imagens/ferramentas.png" alt=""> Ferramentas</h3>
+            <ul>
+              <li>Git ●●●○○</li>
+              <li>GitHub ●●●●○</li>
+              <li>GitHub Copilot ●●●●○</li>
+              <li>Vercel ●○○○○</li>
+              <li>Figma ●●●○○</li>
+              <li>VS Code ●●●●○</li>
+              <li>Postman ●●○○○</li>
+              <li>Canva ●●●○○</li>
+              <li>Trello ●●●●●</li>
+            </ul>
+          </div>
+  
+          <div class="skill-group">
+            <h3><img src="assets/imagens/sistemas.png" alt=""> Sistemas Operacionais</h3>
+            <ul>
+              <li>Windows ●●●●○</li>
+              <li>MacOS ●●●○○</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="skill-group">
+          <h3><img src="assets/imagens/idiomas.png" alt=""> Idiomas</h3>
+          <ul>
+            <li>Português (Nativo)</li>
+            <li>Inglês (Básico a Intermediário)</li>
+            <li>Espanhol (Intermediário)</li>
+          </ul>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.whatsapp.com/" target="_blank" aria-label="Abrir conversa no WhatsApp">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <img src="assets/imagens/contato.png" alt="">
+            </button>
+          </a>
+        </div>
+       </div>
+      </div>
+    </div>
+   
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Técnico de Desenvolvimento de Sistemas de Software</h4>
+           <div class="about__icons"><i class="fa-solid fa-calendar-days"></i> 
+          <span>Agosto 2023 - Maio 2025</span></div>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>SenacTech / RS</span>
+          </div>
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Turismóloga - Bacharel - PUC / RS</span>
+          </div>
+        </div>
+        <div class="row2">
+          <h3>Experiências</h3>
+          <h4>Estudando...</h4>
+          <span>Como estudante dedicada e comprometida com a excelência, aproveito cada oportunidade para aprofundar meus conhecimentos e fortalecer uma base sólida nas áreas de Desenvolvimento Front-end e Back-end. </span>
+          <ul class="about__list">
+            <li class="about__item">Funcionária pública municipal com mais de 15 anos de carreira.</li>
+            <li class="about__item">Coordenadora de Turismo por mais de 07 anos no RS.</li>
+          </ul>
+       </div>
+      </div>
+     
+
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Iniciante em Programação G9</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Alura | Oracle Next Education (ONE). <i class="fa-solid fa-calendar-days"></i>Jun/2025 - Em andamento  
+              </p>
+              <p>Formação em Desenvolvimento Web e Soft Skills: como parte do programa Oracle Next Education (ONE), estou em formação pela Alura, desenvolvendo competências técnicas e comportamentais voltadas ao universo da tecnologia e inovação. A trilha inclui cursos práticos e teóricos que abrangem desde fundamentos da programação até habilidades de autodesenvolvimento e inteligência artificial. Principais conteúdos: desenvolvimento web (HTML, CSS, JavaScript, Git e GitHub), inteligência artificial e engenharia de prompt, soft skills e autodesenvolvimento. Com certificação ao final de cada módulo.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Bootcamp Santander 2025 - Front-end Javascript</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. <i class="fa-solid fa-calendar-days"></i>Jun/2025 a Ago/2025.  
+              </p>
+              <p>
+                Atualmente estou em formação na trilha Santander 2025 - Front-End pela DIO, onde aprofundo meus conhecimentos nas três tecnologias fundamentais do desenvolvimento web: HTML, CSS e JavaScript. O programa tem carga horária de 102 horas e é focado em prática e aplicação real, com 10 projetos interativos, incluindo páginas com temáticas como Stranger Things, Spider-Man e Yu-Gi-Oh. Durante o bootcamp, desenvolvi habilidades como: Estruturação de páginas com HTML semântico, Estilização de interfaces com CSS moderno, incluindo Flexbox e Grid Layout, Criação de páginas responsivas e dinâmicas, Implementação de interatividade com JavaScript, Consumo de APIs e uso de requisições assíncronas, Participação em desafios de código e mentorias ao vivo com profissionais do mercado. Todas as etapas com certificado de conclusão. Além disso, estou construindo este portfólio com projetos que refletem minha evolução técnica e criatividade, sempre buscando boas práticas e foco na experiência do usuário.            
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Bootcamp GitHub Copilot - Microsoft 50 Anos</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. <i class="fa-solid fa-calendar-days"></i>Maio/2025. 17h.  
+              </p>
+              <p>
+                Neste bootcamp (12 cursos, 2 desafios, 1 live de mentoria) aprendi a integrar o GitHub Copilot como um parceiro de codificação, explorando os fundamentos do GitHub e aplicando técnicas avançadas de refatoração. Tudo isso com o suporte da IA que atua como um verdadeiro pair programming, elevando minha produtividade e qualidade nos códigos. Descobri como acelerar o desenvolvimento de minhas aplicações com uma melhor performance.
+              </p>
+            </div>
+          </div>
+           <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Outros Cursos</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                ROCKETSEAT   
+              </p>
+              <p>
+                NLW Pocket JavaScript - <i class="fa-solid fa-calendar-days"></i>Set/2024.
+              </p>
+              <p>NLW Journey "Trust Your Jorney" - <i class="fa-solid fa-calendar-days"></i>Set/2024.</p>
+              <p>NLW Expert trilha de HTML, CSS e Javascript - <i class="fa-solid fa-calendar-days"></i>Jan/2024.</p>
+            </div>
+          </div>
+        </div>
+       </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Vamos transformar ideias</h2>
+    <video src="assets/imagens/videologo.mp4" autoplay muted loop playsinline></video>
+
+    <p>Vamos criar algo incrível juntos? Estou aberta a colaborações, parcerias, freelas e conexões que impulsionem ideias. Me envie um e-mail ou me encontre nas redes sociais — será um prazer conversar e trocar experiências!
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/izauratm" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/izaura-moreira-221a1828/" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a class="izaura_moreira" href="https://www.instagram.com/" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <a href="https://workspace.google.com/intl/pt-BR/gmail/" target="_blank">
+      <button class="btn btn--primary">
+        <span class="email">izauratm@gmail.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2025. Todos os Direitos Reservados. Izaura Moreira. Desenvolvido por 
+      <a href="https://github.com/izauratm" target="_blank">ITM</a>.
+       Portfólio desenvolvido no Lab "Construindo seu Portfolio Front-end do Zero" da 
+      <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a> por 
+      <a href="https://github.com/izauratm" target="_blank">Izaura Moreira</a>.
+    </p>
+  </footer>
+  <script src="assets/tema.js"></script>
+</body>
+</html>
+
+<!--a fazer: localstorage: salvar o tema qdo voltar(que seja o mesmo), conteudos dinamicos pelo JS-->
