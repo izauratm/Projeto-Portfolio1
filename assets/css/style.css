@@ -4,7 +4,7 @@
 :root,
 :root[data-theme='dark'] {
   --primary-color: #F0F0F0;
-
+  
   --primary-bg-color: #220966;
   --secondary-bg-color: #301e61;
   --primary-border-color: #312455;
@@ -159,9 +159,7 @@ h4 {
   text-align: left;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   color: var(--title-color);
@@ -173,9 +171,7 @@ p {
   text-align: justify;
 }
 
-p,
-span,
-li {
+p, span, li {
   font-size: 1rem;
 }
 
@@ -392,6 +388,7 @@ main {
   margin-bottom: 8px;
   font-family: monospace;
 }
+
 /*Seção projetos*/
 .projects {
   display: flex;
@@ -485,7 +482,8 @@ main {
   flex-direction: column;
   gap: 1.5rem
 }
-
+ 
+/*Seção Formação e Curso*/
 .about__content1,
 .about__content2 {
   display: flex;
@@ -496,13 +494,15 @@ main {
 }
 
 .about__photo {
-  width: 100%;
+  max-width: 70%;
   object-fit: cover;
   object-position: center;
   pointer-events: none;
   border-radius: 50rem;
   border: 1px solid var(--primary-border-color);
 }
+
+ 
 
 .about__description {
   display: flex;
@@ -525,21 +525,7 @@ main {
   font-size: 1rem;
 }
 
-.about__content2 .col1,
-.about__content2 .col2 {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  gap: 2rem;
-}
-
-.about__content2 .col1 .row1,
-.about__content2 .col1 .row2 {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}
-
+/*Cursos*/
 .accordion__header {
   width: 100%;
   display: flex;
@@ -777,9 +763,7 @@ video {
     font-size: 1.25rem;
   }
 
-  p,
-  span,
-  li {
+  p, span, li {
     font-size: 1.15rem;
   }
 
@@ -820,4 +804,47 @@ video {
   .about {
     padding: 10rem 15rem 4rem;
   }
+}
+
+/*seção inspiração*/
+.inspiration__list {
+    list-style: none;  
+    padding: 0;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+}
+
+.inspiration__list li { 
+    border-left: 3px solid var(--secondary-border-color); 
+    padding-left: 15px; 
+    transition: background-color 0.3s;  
+}
+
+.inspiration__list li:hover { 
+    background-color: var(--secondary-bg-color); 
+    opacity: 0.9;  
+}
+
+.inspiration__list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--title-color); 
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+ 
+.inspiration__list li span {
+    display: block; 
+    font-size: 0.95em;
+    color: var(--text-color); 
+    margin-top: 4px; /*alinha a descrição (o 10px vem do margin-right do ícone + 15px de padding-left) */
+    margin-left: 45px; 
+}
+
+@media (min-width: 768px) {
+    .inspiration__list {
+        grid-template-columns: 1fr 1fr;  
+    }
 }
