@@ -157,6 +157,8 @@ h4 {
   font-weight: 400;
   font-size: 1.15rem;
   text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h1, h2, h3 {
@@ -164,11 +166,12 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: var(--title-color);
   font-weight: 200;
+  margin-bottom: 0.5rem;
 }
 
 p {
   font-size: 1.15rem;
-  text-align: justify;
+  text-align: left;
 }
 
 p, span, li {
@@ -179,9 +182,6 @@ span {
   font-size: 1rem;
 }
 
-p {
-  text-align: justify;
-}
 
 .header {
   display: flex;
@@ -288,8 +288,7 @@ p {
   transition: ease-in-out .3s;
 }
 
-.btn span,
-.btn i {
+.btn span, .btn i {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
@@ -302,10 +301,7 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-main,
-.projects,
-.about,
-.contact {
+main, .projects, .about, .contact, .inspiration {
   padding: 2.5rem 1rem;
 }
 
@@ -320,12 +316,7 @@ main {
   flex-direction: column;
   gap: 1.5rem;
 }
-
-.main__content2 iframe {
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-
+ 
 .technologies {
   display: flex;
   flex-direction: column;
@@ -363,7 +354,9 @@ main {
 }
 
 .technologies__logo {
-  height: 2.4rem;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 /*habilidades*/
@@ -494,15 +487,18 @@ main {
 }
 
 .about__photo {
-  max-width: 70%;
+  width: 250px;  
+  height: 250px; 
   object-fit: cover;
   object-position: center;
-  pointer-events: none;
-  border-radius: 50rem;
+ 
+  border-radius: 50%;
   border: 1px solid var(--primary-border-color);
 }
+.row1, .row2 {
+  margin-bottom: 2rem;
+}
 
- 
 
 .about__description {
   display: flex;
@@ -650,9 +646,7 @@ video {
     font-size: 3rem;
   }
 
-  main,
-  .projects,
-  .about {
+  main, .projects, .about, .inspiration {
     padding: 8rem 6rem 4rem 6rem;
   }
 
@@ -773,7 +767,6 @@ video {
   }
 }
 
-
 @media (min-width: 1400px) {
   h1 {
     font-size: 6.25rem;
@@ -801,18 +794,22 @@ video {
 
   .technologies,
   .projects,
-  .about {
+  .about, .inspiration {
     padding: 10rem 15rem 4rem;
   }
 }
 
-/*seção inspiração*/
+/*Seção Inspirações*/
+.inspiration {
+  background-color: var(--primary-border-color);
+   
+}
 .inspiration__list {
     list-style: none;  
     padding: 0;
     display: grid; 
     grid-template-columns: 1fr; 
-    gap: 1rem; 
+    gap: 1rem;     
 }
 
 .inspiration__list li { 
@@ -821,16 +818,17 @@ video {
     transition: background-color 0.3s;  
 }
 
-.inspiration__list li:hover { 
-    background-color: var(--secondary-bg-color); 
-    opacity: 0.9;  
+.inspiration__list a:hover { 
+    background-color: var(--secondary-border-color); 
+    opacity: 0.9;      
 }
 
 .inspiration__list a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--title-color); 
+    color: var(--title-color);
+    border-radius: 0%.5rem;      
     font-size: 1.1em;
     font-weight: 600;
   }
@@ -838,7 +836,7 @@ video {
 .inspiration__list li span {
     display: block; 
     font-size: 0.95em;
-    color: var(--text-color); 
+    /*color: var(--text-color); */
     margin-top: 4px; /*alinha a descrição (o 10px vem do margin-right do ícone + 15px de padding-left) */
     margin-left: 45px; 
 }
