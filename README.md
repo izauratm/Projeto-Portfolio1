@@ -52,6 +52,13 @@ Este projeto está licenciado sob a Licença MIT – fique à vontade para usar 
 - [Bootstrap](https://getbootstrap.com/)
 - [Canva](https://www.canva.com/pt_br/)
 
+---
+
+### Licença
+
+Este projeto está licenciado sob os termos da [Licença MIT](LICENSE).
+
+<img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-green">
 
 
 
